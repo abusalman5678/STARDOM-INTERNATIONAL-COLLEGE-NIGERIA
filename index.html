@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SICN | Student Portal</title>
+
+  <meta
+    name="description"
+    content="STARDOM INTERNATIONAL COLLEGE NIGERIA Student, Staff, Management and Director Portal"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+
+    <div class="brand">
+      <div class="logo">SICN</div>
+
+      <div>
+        <h1>STARDOM INTERNATIONAL COLLEGE NIGERIA</h1>
+        <p>Education • Discipline • Excellence</p>
+      </div>
+    </div>
+
+    <button id="menuBtn" class="menu-btn">☰</button>
+
+    <nav id="nav">
+
+      <button data-page="home">Home</button>
+      <button data-page="admission">Admission</button>
+      <button data-page="login">Login</button>
+      <button data-page="about">About</button>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ================= HOME ================= -->
+  <main id="home" class="page active">
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <span class="badge">SICN OFFICIAL PORTAL</span>
+
+        <h2>
+          STARDOM INTERNATIONAL
+          COLLEGE NIGERIA
+        </h2>
+
+        <p>
+          Student, Staff, Management and Director
+          school management portal.
+        </p>
+
+        <div class="hero-buttons">
+
+          <button
+            class="btn primary"
+            data-page="admission">
+            Apply Now
+          </button>
+
+          <button
+            class="btn outline"
+            data-page="login">
+            Portal Login
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="cards three">
+
+      <div class="info-card">
+        <span class="big-icon">🎓</span>
+        <h3>Students</h3>
+        <p>
+          Registration, admission, results,
+          school fees and student documents.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <span class="big-icon">👨‍🏫</span>
+        <h3>Staff</h3>
+        <p>
+          Staff application and academic
+          result management.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <span class="big-icon">👑</span>
+        <h3>Director</h3>
+        <p>
+          Main administration and supervision
+          of Management, Staff and Students.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= ADMISSION ================= -->
+  <main id="admission" class="page">
+
+    <section class="container">
+
+      <div class="section-heading">
+
+        <span class="badge">APPLICATION CENTRE</span>
+
+        <h2>Choose Application Type</h2>
+
+        <p>
+          Select the account you want to create.
+        </p>
+
+      </div>
+
+
+      <div class="cards four">
+
+        <button
+          class="role-card"
+          data-form="studentForm">
+
+          <span>🎓</span>
+
+          <h3>Student</h3>
+
+          <p>Student admission application</p>
+
+        </button>
+
+
+        <button
+          class="role-card"
+          data-form="staffForm">
+
+          <span>👨‍🏫</span>
+
+          <h3>Staff APPLYING</h3>
+
+          <p>Apply to work at SICN</p>
+
+        </button>
+
+
+        <button
+          class="role-card"
+          data-form="managementForm">
+
+          <span>🏢</span>
+
+          <h3>Management APPLYING</h3>
+
+          <p>Management application</p>
+
+        </button>
+
+
+        <button
+          class="role-card"
+          data-form="directorForm">
+
+          <span>👑</span>
+
+          <h3>Director REGISTER</h3>
+
+          <p>Director registration</p>
+
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= STUDENT FORM ================= -->
+    <section
+      id="studentForm"
+      class="form-box hidden">
+
+      <h2>Student Registration</h2>
+
+      <p class="form-note">
+        Create your student account. Your application
+        must be approved before you can access the portal.
+      </p>
+
+      <form id="studentApplicationForm">
+
+        <div class="form-grid">
+
+          <label>
+            Full Name
+            <input
+              id="studentName"
+              type="text"
+              required>
+          </label>
+
+
+          <label>
+            Date of Birth
+            <input
+              id="studentDOB"
+              type="date"
+              required>
+          </label>
+
+
+          <label>
+            Phone Number
+            <input
+              id="studentPhone"
+              type="tel"
+              required>
+          </label>
+
+
+          <label>
+            Email Address
+            <input
+              id="studentEmail"
+              type="email"
+              required>
+          </label>
+
+
+          <label>
+            Address
+            <input
+              id="studentAddress"
+              type="text"
+              required>
+          </label>
+
+
+          <label>
+            Class
+            <select id="studentClass" required>
+
+              <option value="">
+                Select Class
+              </option>
+
+              <option>Nursery 1</option>
+              <option>Nursery 2</option>
+              <option>Nursery 3</option>
+
+              <option>Primary 1</option>
+              <option>Primary 2</option>
+              <option>Primary 3</option>
+              <option>Primary 4</option>
+              <option>Primary 5</option>
+              <option>Primary 6</option>
+
+              <option>JSS 1</option>
+              <option>JSS 2</option>
+              <option>JSS 3</option>
+
+              <option>SS 1</option>
+              <option>SS 2</option>
+              <option>SS 3</option>
+
+            </select>
+          </label>
+
+
+          <label>
+            Father / Mother Name
+            <input
+              id="parentName"
+              type="text"
+              required>
+          </label>
+
+
+          <label>
+            Parent Phone
+            <input
+              id="parentPhone"
+              type="tel"
+              required>
+          </label>
+
+
+          <label>
+            Parent Email
+            <input
+              id="parentEmail"
+              type="email">
+          </label>
+
+
+          <label>
+            Passport
+            <input
+              id="studentPassport"
+              type="file"
+              accept="image/*">
+          </label>
+
+
+          <label>
+            Create Password
+            <input
+              id="studentPassword"
+              type="password"
+              minlength="6"
+              required>
+          </label>
+
+
+          <label>
+            Confirm Password
+            <input
+              id="studentConfirmPassword"
+              type="password"
+              minlength="6"
+              required>
+          </label>
+
+        </div>
+
+
+        <label class="check">
+          <input
+            id="studentAgree"
+            type="checkbox"
+            required>
+
+          I confirm that the information supplied
+          is correct.
+        </label>
+
+
+        <button
+          class="btn primary"
+          type="submit">
+
+          Submit Student Application
+
+        </button>
+
+      </form>
+
+    </section>
+
+
+    <!-- ================= STAFF FORM ================= -->
+    <section
+      id="staffForm"
+      class="form-box hidden">
+
+      <h2>Staff APPLYING</h2>
+
+      <form id="staffApplicationForm">
+
+        <div class="form-grid">
+
+          <label>
+            Full Name
+            <input
+              id="staffName"
+              type="text"
+              required>
+          </label>
+
+
+          <label>
+            Address
+            <input
+              id="staffAddress"
+              type="text"
+              required>
+          </label>
+
+
+          <label>
+            Qualification
+            <select id="staffQualification" required>
+
+              <option value="">
+                Select Qualification
+              </option>
+
+              <option>SSCE</option>
+              <option>NCE</option>
+              <option>OND</option>
+              <option>HND</option>
+              <option>B.Sc</option>
+              <option>B.Ed</option>
+              <option>M.Ed</option>
+              <option>Other</option>
+
+            </select>
+          </label>
+
+
+          <label>
+            Job / Position
+            <input
+              id="staffJob"
+              type="text"
+              required>
+          </label>
+
+
+          <label>
+            Phone Number
+            <input
+              id="staffPhone"
+              type="tel"
+              required>
+          </label>
+
+
+          <label>
+            Email Address
+            <input
+              id="staffEmail"
+              type="email"
+              required>
+          </label>
+
+
+          <label>
+            Passport
+            <input
+              id="staffPassport"
+              type="file"
+              accept="image/*">
+          </label>
+
+
+          <label>
+            Create Password
+            <input
+              id="staffPassword"
+              type="password"
+              minlength="6"
+              required>
+          </label>
+
+
+          <label>
+            Confirm Password
+            <input
+              id="staffConfirmPassword"
+              type="password"
+              minlength="6"
+              required>
+          </label>
+
+        </div>
+
+
+        <button
+          class="btn primary"
+          type="submit">
+
+          Submit Staff Application
+
+        </button>
+
+      </form>
+
+    </section>
+
+
+    <!-- ================= MANAGEMENT FORM ================= -->
+    <section
+      id="managementForm"
+      class="form-box hidden">
+
+      <h2>Management APPLYING</h2>
+
+      <form id="managementApplicationForm">
+
+        <div class="form-grid">
+
+          <label>
+            Full Name
+            <input
+              id="managementName"
+              type="text"
+              required>
+          </label>
+
+
+          <label>
+            Address
+            <input
+              id="managementAddress"
+              type="text"
+              required>
+          </label>
+
+
+          <label>
+            Qualification
+            <input
+              id="managementQualification"
+              type="text"
+              required>
+          </label>
+
+
+          <label>
+            Job / Position
+            <input
+              id="managementJob"
+              type="text"
+              required>
+          </label>
+
+
+          <label>
+            Phone Number
+            <input
+              id="managementPhone"
+              type="tel"
+              required>
+          </label>
+
+
+          <label>
+            Email Address
+            <input
+              id="managementEmail"
+              type="email"
+              required>
+          </label>
+
+
+          <label>
+            Passport
+            <input
+              id="managementPassport"
+              type="file"
+              accept="image/*">
+          </label>
+
+
+          <label>
+            Create Password
+            <input
+              id="managementPassword"
+              type="password"
+              minlength="6"
+              required>
+          </label>
+
+
+          <label>
+            Confirm Password
+            <input
+              id="managementConfirmPassword"
+              type="password"
+              minlength="6"
+              required>
+          </label>
+
+        </div>
+
+
+        <button
+          class="btn primary"
+          type="submit">
+
+          Submit Management Application
+
+        </button>
+
+      </form>
+
+    </section>
+
+
+    <!-- ================= DIRECTOR FORM ================= -->
+    <section
+      id="directorForm"
+      class="form-box hidden director-form">
+
+      <div class="director-title">
+        <span>👑</span>
+
+        <div>
+          <h2>Director REGISTER</h2>
+
+          <p>
+            Director is the main administrator of
+            SICN portal.
+          </p>
+        </div>
+      </div>
+
+
+      <form id="directorApplicationForm">
+
+        <div class="form-grid">
+
+          <label>
+            Full Name
+            <input
+              id="directorName"
+              type="text"
+              required>
+          </label>
+
+
+          <label>
+            Address
+            <input
+              id="directorAddress"
+              type="text"
+              required>
+          </label>
+
+
+          <label>
+            Qualification
+            <input
+              id="directorQualification"
+              type="text"
+              placeholder="B.Ed, M.Ed, B.Sc..."
+              required>
+          </label>
+
+
+          <label>
+            Position / Job
+            <input
+              id="directorJob"
+              type="text"
+              value="Director"
+              required>
+          </label>
+
+
+          <label>
+            Phone Number
+            <input
+              id="directorPhone"
+              type="tel"
+              required>
+          </label>
+
+
+          <label>
+            Email Address
+            <input
+              id="directorEmail"
+              type="email"
+              required>
+          </label>
+
+
+          <label>
+            Passport
+            <input
+              id="directorPassport"
+              type="file"
+              accept="image/*">
+          </label>
+
+
+          <label>
+            Create Password
+            <input
+              id="directorPassword"
+              type="password"
+              minlength="8"
+              required>
+          </label>
+
+
+          <label>
+            Confirm Password
+            <input
+              id="directorConfirmPassword"
+              type="password"
+              minlength="8"
+              required>
+          </label>
+
+        </div>
+
+
+        <label class="check">
+          <input
+            id="directorAgree"
+            type="checkbox"
+            required>
+
+          I confirm that I am authorized to submit
+          this Director application.
+        </label>
+
+
+        <button
+          class="btn primary"
+          type="submit">
+
+          Submit Director Registration
+
+        </button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= LOGIN ================= -->
+  <main id="login" class="page">
+
+    <section class="login-box">
+
+      <div class="section-heading">
+
+        <span class="badge">SECURE PORTAL LOGIN</span>
+
+        <h2>Login</h2>
+
+        <p>Select your account type.</p>
+
+      </div>
+
+
+      <div class="login-types">
+
+        <button
+          data-role="student">
+          🎓 Student
+        </button>
+
+        <button
+          data-role="staff">
+          👨‍🏫 Staff
+        </button>
+
+        <button
+          data-role="management">
+          🏢 Management
+        </button>
+
+        <button
+          data-role="director">
+          👑 Director
+        </button>
+
+      </div>
+
+
+      <form id="loginForm">
+
+        <input
+          id="loginNumber"
+          type="text"
+          placeholder="Registration / Application Number"
+          required>
+
+
+        <input
+          id="loginEmail"
+          type="email"
+          placeholder="Email Address"
+          required>
+
+
+        <input
+          id="loginPassword"
+          type="password"
+          placeholder="Password"
+          required>
+
+
+        <button
+          class="btn primary"
+          type="submit">
+
+          Login
+
+        </button>
+
+      </form>
+
+
+      <p
+        id="loginMessage"
+        class="message">
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= ABOUT ================= -->
+  <main id="about" class="page">
+
+    <section class="container about">
+
+      <span class="badge">ABOUT SICN</span>
+
+      <h2>
+        STARDOM INTERNATIONAL COLLEGE NIGERIA
+      </h2>
+
+      <p>
+        A modern school portal designed for
+        Students, Staff, Management and Director.
+      </p>
+
+
+      <div class="hierarchy">
+
+        <div class="hierarchy-main">
+          👑
+          <strong>DIRECTOR</strong>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="hierarchy-row">
+
+          <div>🏢<strong>Management</strong></div>
+          <div>👨‍🏫<strong>Staff</strong></div>
+          <div>🎓<strong>Students</strong></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= DASHBOARD ================= -->
+  <main id="dashboard" class="page">
+
+    <section class="dashboard-top">
+
+      <div>
+
+        <span
+          id="dashboardRole"
+          class="badge">
+          PORTAL
+        </span>
+
+        <h2 id="dashboardName">
+          Dashboard
+        </h2>
+
+        <p id="dashboardNumber"></p>
+
+      </div>
+
+
+      <button
+        id="logoutBtn"
+        class="btn danger">
+
+        Logout
+
+      </button>
+
+    </section>
+
+
+    <!-- STUDENT -->
+    <section
+      id="studentDashboard"
+      class="dashboard-area hidden">
+
+      <div class="cards dashboard-grid">
+
+        <button class="dashboard-card">
+          💰
+          <strong>School Fees</strong>
+        </button>
+
+        <button class="dashboard-card">
+          📄
+          <strong>Admission Letter</strong>
+        </button>
+
+        <button class="dashboard-card">
+          🪪
+          <strong>ID Card</strong>
+        </button>
+
+        <button
+          id="viewStudentResults"
+          class="dashboard-card">
+
+          📊
+          <strong>My Results</strong>
+
+        </button>
+
+      </div>
+
+
+      <div
+        id="studentResultsBox"
+        class="data-box hidden">
+
+        <h3>My Approved Results</h3>
+
+        <div id="studentResults"></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- STAFF -->
+    <section
+      id="staffDashboard"
+      class="dashboard-area hidden">
+
+      <div class="cards dashboard-grid">
+
+        <button class="dashboard-card">
+          🎓
+          <strong>Students</strong>
+        </button>
+
+        <button
+          id="showResultEntry"
+          class="dashboard-card">
+
+          📝
+          <strong>Enter Results</strong>
+
+        </button>
+
+      </div>
+
+
+      <div
+        id="resultEntryBox"
+        class="form-box hidden">
+
+        <h3>Student Result Entry</h3>
+
+        <form id="resultForm">
+
+          <div class="form-grid">
+
+            <label>
+              Student Registration No
+              <input
+                id="resultRegNo"
+                required>
+            </label>
+
+
+            <label>
+              Student ID
+              <input
+                id="resultStudentId"
+                required>
+            </label>
+
+
+            <label>
+              Class
+              <input
+                id="resultClass"
+                required>
+            </label>
+
+
+            <label>
+              Subject
+              <input
+                id="resultSubject"
+                required>
+            </label>
+
+
+            <label>
+              Session
+              <input
+                id="resultSession"
+                placeholder="2026/2027"
+                required>
+            </label>
+
+
+            <label>
+              Term
+
+              <select id="resultTerm" required>
+
+                <option value="">
+                  Select Term
+                </option>
+
+                <option>First Term</option>
+                <option>Second Term</option>
+                <option>Third Term</option>
+
+              </select>
+
+            </label>
+
+
+            <label>
+              CA / Test
+              <input
+                id="resultCA"
+                type="number"
+                min="0"
+                max="40"
+                required>
+            </label>
+
+
+            <label>
+              Examination
+              <input
+                id="resultExam"
+                type="number"
+                min="0"
+                max="60"
+                required>
+            </label>
+
+          </div>
+
+
+          <button
+            class="btn primary"
+            type="submit">
+
+            Submit Result
+
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+    <!-- MANAGEMENT -->
+    <section
+      id="managementDashboard"
+      class="dashboard-area hidden">
+
+      <div class="cards dashboard-grid">
+
+        <button
+          id="managementStudents"
+          class="dashboard-card">
+
+          🎓
+          <strong>Students</strong>
+
+        </button>
+
+
+        <button
+          id="managementStaff"
+          class="dashboard-card">
+
+          👨‍🏫
+          <strong>Staff</strong>
+
+        </button>
+
+
+        <button
+          id="managementApplications"
+          class="dashboard-card">
+
+          📋
+          <strong>Applications</strong>
+
+        </button>
+
+
+        <button
+          id="managementResults"
+          class="dashboard-card">
+
+          📊
+          <strong>Results</strong>
+
+        </button>
+
+      </div>
+
+
+      <div
+        id="managementData"
+        class="data-box">
+
+      </div>
+
+    </section>
+
+
+    <!-- DIRECTOR -->
+    <section
+      id="directorDashboard"
+      class="dashboard-area hidden">
+
+      <div class="director-dashboard-title">
+
+        <span>👑</span>
+
+        <div>
+          <h2>Director Control Centre</h2>
+
+          <p>
+            Main administration of Management,
+            Staff and Students.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="cards dashboard-grid">
+
+        <button
+          id="directorStudents"
+          class="dashboard-card">
+
+          🎓
+          <strong>Students</strong>
+
+        </button>
+
+
+        <button
+          id="directorStaff"
+          class="dashboard-card">
+
+          👨‍🏫
+          <strong>Staff</strong>
+
+        </button>
+
+
+        <button
+          id="directorManagement"
+          class="dashboard-card">
+
+          🏢
+          <strong>Management</strong>
+
+        </button>
+
+
+        <button
+          id="directorApplications"
+          class="dashboard-card">
+
+          📋
+          <strong>Applications</strong>
+
+        </button>
+
+
+        <button
+          id="directorResults"
+          class="dashboard-card">
+
+          📊
+          <strong>Results</strong>
+
+        </button>
+
+
+        <button
+          id="directorReports"
+          class="dashboard-card">
+
+          📑
+          <strong>Reports</strong>
+
+        </button>
+
+      </div>
+
+
+      <div
+        id="directorData"
+        class="data-box">
+
+        <p>
+          Select an option above to manage the school.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= NOTIFICATION ================= -->
+  <div
+    id="notification"
+    class="notification">
+  </div>
+
+
+  <script
+    type="module"
+    src="script.js">
+  </script>
+
+</body>
+</html>
